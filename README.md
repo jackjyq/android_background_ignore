@@ -13,5 +13,7 @@ adb shell pm list packages -3
 3、还原RUN_IN_BACKGROUND状态：
 $ adb shell cmd appops set &lt;package_name&gt; RUN_IN_BACKGROUND allow
 
+已知工作异常的APP，请提交到：https://github.com/Jiangyiqun/android_background_ignore/issues
+
 详情参考官方文档：https://developer.android.com/topic/performance/background-optimization.html
 
