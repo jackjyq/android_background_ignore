@@ -2,7 +2,7 @@
 ::作者 白兔Jack
 ::版本 V0.2
 ::项目地址 https://github.com/Jiangyiqun/android_background_ignore
-echo off
+@echo off
 cls
 if not exist white_list.txt (
 	echo.
