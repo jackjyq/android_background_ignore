@@ -1,80 +1,81 @@
-::Ãû³Æ android_background_ignore
-::×÷Õß °×ÍÃJack
-::°æ±¾ V0.2
-::ÏîÄ¿µØÖ· https://github.com/Jiangyiqun/android_background_ignore
+::åç§° android_background_ignore
+::ä½œè€… ç™½å…”Jack
+::ç‰ˆæœ¬ V0.2
+::é¡¹ç›®åœ°å€ https://github.com/Jiangyiqun/android_background_ignore
+
 @echo off
 cls
 if not exist white_list.txt (
 	echo.
-	echo Ã»ÓĞÕÒµ½ white_list.txt ÎÄ¼ş,Çë´ÓÈçÏÂµØÖ·ÏÂÔØ
+	echo æ²¡æœ‰æ‰¾åˆ° white_list.txt æ–‡ä»¶,è¯·ä»å¦‚ä¸‹åœ°å€ä¸‹è½½
 	echo https://github.com/Jiangyiqun/android_background_ignore
-	echo ²¢¿½±´ÖÁÓë android_background_ignore.bat ÏàÍ¬Â·¾¶ÏÂ
+	echo å¹¶æ‹·è´è‡³ä¸ android_background_ignore.bat ç›¸åŒè·¯å¾„ä¸‹
 	echo.
 	pause
 )
 
 echo. 
-echo ¹¦ÄÜËµÃ÷£º
-echo 1¡¢¿ÉÏŞÖÆµÚÈı·½APPµÄ×Ô¶¯»½ĞÑ
-echo 2¡¢²»ĞèÒª ROOT
-echo 3¡¢±ØĞëÊÇ Android 7.0 +
+echo åŠŸèƒ½è¯´æ˜ï¼š
+echo 1ã€å¯é™åˆ¶ç¬¬ä¸‰æ–¹APPçš„è‡ªåŠ¨å”¤é†’
+echo 2ã€ä¸éœ€è¦ ROOT
+echo 3ã€å¿…é¡»æ˜¯ Android 7.0 +
 echo.
-echo ×¼±¸²½Öè£º
-echo 1¡¢µçÄÔ°²×° ADB
-echo 2¡¢µçÄÔ°²×° Universal Android USB driver
-echo 3¡¢ÊÖ»ú¿ªÆô USB µ÷ÊÔ
+echo å‡†å¤‡æ­¥éª¤ï¼š
+echo 1ã€ç”µè„‘å®‰è£… ADB
+echo 2ã€ç”µè„‘å®‰è£… Universal Android USB driver
+echo 3ã€æ‰‹æœºå¼€å¯ USB è°ƒè¯•
 echo.
-echo Ïê¼û https://zhuanlan.zhihu.com/p/23372646
+echo è¯¦è§ https://zhuanlan.zhihu.com/p/23372646
 echo.
 pause
 adb devices
-echo ÆÁÄ»Ó¦µ±ÏÔÊ¾ÀàËÆ "CVH7N0000000000        device" µÄ×Ö´®
-echo È·ÈÏÕıÈ·Çë¼ÌĞø£¬·ñÔòÇëÖØĞÂ¼ì²é×¼±¸²½Öè
+echo å±å¹•åº”å½“æ˜¾ç¤ºç±»ä¼¼ "CVH7N0000000000        device" çš„å­—ä¸²
+echo ç¡®è®¤æ­£ç¡®è¯·ç»§ç»­ï¼Œå¦åˆ™è¯·é‡æ–°æ£€æŸ¥å‡†å¤‡æ­¥éª¤
 echo.
 pause
 
 echo.
-echo ¹¦ÄÜ²Ëµ¥£º
-echo 1¡¢ÏŞÖÆ×Ô¶¯»½ĞÑ
-echo 2¡¢»Ö¸´Ä¬ÈÏÄ£Ê½
-set /p choice=ÇëÑ¡Ôñ£º
+echo åŠŸèƒ½èœå•ï¼š
+echo 1ã€é™åˆ¶è‡ªåŠ¨å”¤é†’
+echo 2ã€æ¢å¤é»˜è®¤æ¨¡å¼
+set /p choice=è¯·é€‰æ‹©ï¼š
 if "%choice%"=="1" goto plan_1
 if "%choice%"=="2" goto plan_2
 
 :plan_1
 echo.
-echo ÕıÔÚÏŞÖÆ×Ô¶¯»½ĞÑ£º
+echo æ­£åœ¨é™åˆ¶è‡ªåŠ¨å”¤é†’ï¼š
 adb shell pm list packages -3 > apps_list.txt
 for /f "tokens=2 delims=:" %%i in (apps_list.txt) do (
-	echo ÕıÔÚÏŞÖÆ %%i µÄ×Ô¶¯»½ĞÑ
+	echo æ­£åœ¨é™åˆ¶ %%i çš„è‡ªåŠ¨å”¤é†’
 	adb shell cmd appops set %%i RUN_IN_BACKGROUND ignore
 )
 del apps_list.txt
 
 echo.
-echo ÕıÔÚ´¦Àí°×Ãûµ¥(ÇëºöÂÔ¸Ã²½ÖèÖĞµÄ±¨´í£©£º
+echo æ­£åœ¨å¤„ç†ç™½åå•(è¯·å¿½ç•¥è¯¥æ­¥éª¤ä¸­çš„æŠ¥é”™ï¼‰ï¼š
 
 if exist white_list.txt (
 	echo.
 	for /f "eol=#" %%i in (white_list.txt) do (
-	echo ÕıÔÚ»Ö¸´ %%i ÎªÄ¬ÈÏ×´Ì¬
+	echo æ­£åœ¨æ¢å¤ %%i ä¸ºé»˜è®¤çŠ¶æ€
 	adb shell cmd appops set %%i RUN_IN_BACKGROUND allow
 	)
 )
 	
 if not exist white_list.txt (
 	echo.
-	echo Ã»ÓĞÕÒµ½white_list.txtÎÄ¼ş,Ìø¹ı´¦Àí°×Ãûµ¥
+	echo æ²¡æœ‰æ‰¾åˆ°white_list.txtæ–‡ä»¶,è·³è¿‡å¤„ç†ç™½åå•
 	goto plan_end
 )
 goto plan_end
 
 :plan_2
 echo.
-echo ÕıÔÚ»Ö¸´Ä¬ÈÏÄ£Ê½£º
+echo æ­£åœ¨æ¢å¤é»˜è®¤æ¨¡å¼ï¼š
 adb shell pm list packages -3 > apps_list.txt
 for /f "tokens=2 delims=:" %%i in (apps_list.txt) do (
-	echo ÕıÔÚ»Ö¸´ %%i ÎªÄ¬ÈÏ×´Ì¬
+	echo æ­£åœ¨æ¢å¤ %%i ä¸ºé»˜è®¤çŠ¶æ€
 	adb shell cmd appops set %%i RUN_IN_BACKGROUND allow
 )
 del apps_list.txt
@@ -82,6 +83,6 @@ goto plan_end
 
 :plan_end
 echo.
-echo ÒÑ¾­Íê³É£¬Çë¹Ø±ÕUSBµ÷ÊÔ
+echo å·²ç»å®Œæˆï¼Œè¯·å…³é—­USBè°ƒè¯•
 echo.
 pause
