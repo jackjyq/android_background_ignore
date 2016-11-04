@@ -8,7 +8,7 @@
 
 使用步骤：
 
-1、下载 android_background_ingore.bat 与 white_list.txt 至同一目录
+1、下载 android_background_ingore.bat 与 white_list.txt 至同一目录（请下载最新Release中的压缩包）
 
 2、电脑安装 ADB
 
