@@ -8,7 +8,7 @@
 
 使用步骤：
 
-1、下载最新releases并解压
+1、下载最新releases并解压（若直接从code中下载，请注意bat文件编码必须是ANSI才能运行）
 
 - https://github.com/Jiangyiqun/android_background_ignore/releases
 
