@@ -1,4 +1,8 @@
 #收录了已知运行异常的APP
 #若发现未包含的APP，请提交至 https://github.com/Jiangyiqun/android_background_ignore/issues/1
+#来电信息无法自动弹出
 org.xdty.callerinfo
+#手机长期不动作，无法自动弹出消息
 com.tencent.mobileqq
+#自动提醒无法使用
+cn.ticktick.task
