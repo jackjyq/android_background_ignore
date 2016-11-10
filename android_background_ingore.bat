@@ -28,7 +28,6 @@ echo 3、手机开启 USB 调试
 echo.
 echo 详见 https://zhuanlan.zhihu.com/p/23372646
 echo.
-pause
 adb devices
 echo 屏幕应当显示类似 "CVH7N0000000000        device" 的字串
 echo 确认正确请继续，否则请重新检查准备步骤
