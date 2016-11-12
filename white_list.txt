@@ -1,6 +1,22 @@
-#收录了已知运行异常的APP
-#若发现未包含的APP，请提交至 https://github.com/Jiangyiqun/android_background_ignore/issues/1
-org.xdty.callerinfo
-com.tencent.mobileqq
-cn.ticktick.task
+# 名称 whitelist.txt
+# 作者 白兔Jack
+# 版本 V0.3
+# 项目地址 https://github.com/Jiangyiqun/android_background_ignore
+# 功能 收录在此的APP，在运行android_background_ingore.bat时，会被忽略。
+# 说明 列表中的APP大多为预防性添加，我并未逐个确认一定会工作异常
+
+# 即时聊天
 com.tencent.mm
+com.tencent.mobileqq
+com.tencent.minihd.qq
+com.tencent.qqlite
+com.tencent.mobileqqi
+com.tencent.qq.kddi
+
+# 来电显示
+org.xdty.callerinfo
+
+# 日历
+cn.ticktick.task
+
+# 邮箱
