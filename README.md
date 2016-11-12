@@ -1,12 +1,12 @@
-功能简介：
+# 功能简介：
 限制非ROOT手机APP的自动唤醒
 
-适用情况：
+# 适用情况：
 - 该方法仅适用于Android 7.0 +
 - 该方法并不完美，若手机已ROOT，推荐使用其它更彻底的方案
 - 内置后台限制的安卓（如MIUI、EMUI），无需使用本方法
 
-使用步骤：
+# 使用步骤：
 
 1、下载最新releases并解压（若直接从code中下载，请注意bat文件编码必须是ANSI才能运行）
 
@@ -24,7 +24,7 @@
 
 5、运行 android_background_ingore.bat
 
-技术说明：
+# 技术说明：
 Android 7.0 新增了一个AppOps项 RUN_IN_BACKGROUND，可用来限制指定APP自动唤醒，如下：
 
 For this implementation, we now keep track of how long a uid has
@@ -48,7 +48,7 @@ This means, until the app next goes in the foreground:
 本项目即给所有第三方APP执行如下命令：
 - adb shell cmd appops set <package_name> RUN_IN_BACKGROUND ignore
 
-已知问题：
+# 已知问题：
 
 问题1：部分APP会工作异常
 
