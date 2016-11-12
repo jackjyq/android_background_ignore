@@ -2,13 +2,13 @@
 限制非ROOT手机APP的自动唤醒
 
 # 适用情况：
-- 该方法仅适用于Android 7.0 +
+- 该方法仅适用于Android N，特别推荐原生Android使用
 - 该方法并不完美，若手机已ROOT，推荐使用其它更彻底的方案
-- 内置后台限制的安卓（如MIUI、EMUI），无需使用本方法
+- 内置后台限制功能的安卓（如MIUI、EMUI），无需使用本方法
 
 # 使用步骤：
 
-1. 下载[android_background_ingore.bat](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ingore.bat)与[whitelist.txt](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/white_list.txt)([批处理闪退点这里](https://github.com/Jiangyiqun/android_background_ignore/wiki))
+1. 下载[android_background_ingore.bat](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ingore.bat)与[whitelist.txt](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/white_list.txt)
 
 2. 电脑安装 [ADB](http://forum.xda-developers.com/showthread.php?p=48915118#post48915118)
 
@@ -16,10 +16,10 @@
 
 4. 手机开启 USB 调试 
 
-5. 运行 android_background_ingore.bat
+5. 运行 android_background_ingore.bat  ([闪退?](https://github.com/Jiangyiqun/android_background_ignore/wiki))
 
 # 技术说明：
-Android 7.0 新增了一个AppOps项 RUN_IN_BACKGROUND，可用来限制指定APP自动唤醒，如下：
+Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤醒，如下：
 
 > For this implementation, we now keep track of how long a uid has
 been in the background, and after a certain amount of time
@@ -35,27 +35,23 @@ This means, until the app next goes in the foreground:
 > - All jobs for the app are cancelled and no more can be scheduled.
 > - All syncs for the app are cancelled and no more can be requested.
 
-参考1：https://zhuanlan.zhihu.com/p/22162719
+参考：[Android 7的新AppOps项：RUN_IN_BACKGROUND到底做了什么](https://zhuanlan.zhihu.com/p/22162719)
 
-参考2：https://developer.android.com/topic/performance/background-optimization.html
+参考：[Google documents: Background Optimizations](https://developer.android.com/topic/performance/background-optimization.html)
 
-本项目即给所有第三方APP执行如下命令：
+本项目即给所有**第三方APP**执行如下命令：
 > adb shell cmd appops set <package_name> RUN_IN_BACKGROUND ignore
 
 # 已知问题：
 
-## 问题1：部分APP会工作异常
+## 问题1：部分APP工作异常
 
 对策是维护一个白名单，程序会把 white_list.txt 中APP自动设置为 RUN_IN_BACKGROUND allow 状态。若发现未包含的APP，请提交至：https://github.com/Jiangyiqun/android_background_ignore/issues
 
-## 问提2：部分APP仍然会唤醒
+## 问提2：部分APP仍会唤醒
 
-无法阻止JobScheduler自动唤醒APP，例如大众点评、Bilibili
+1. 无法阻止JobScheduler自动唤醒APP，例如大众点评、Bilibili; 这种唤醒频率较低，[听说](https://www.zhihu.com/question/24360587)较为省电
 
-- 这种唤醒频率较低，听说也较为省电。参考：https://www.zhihu.com/question/24360587
+2. 无法阻止添加系统账号导致的互相唤醒，阿里系多使用此方法
 
-无法阻止添加系统账号导致的互相唤醒，阿里系多使用此方法
-
-无法阻止ShareServie导致的互相唤醒，百度系多使用此方法
-
-- 少装阿里系/百度系的APP，可以减少互相唤醒
+3. 无法阻止ShareServie导致的互相唤醒，百度系多使用此方法
