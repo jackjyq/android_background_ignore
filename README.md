@@ -8,21 +8,15 @@
 
 # 使用步骤：
 
-1、下载最新releases并解压（若直接从code中下载，请注意bat文件编码必须是ANSI才能运行）
+1. 下载[android_background_ingore.bat](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ingore.bat)与[whitelist.txt](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/white_list.txt)([批处理闪退点这里](https://github.com/Jiangyiqun/android_background_ignore/wiki))
 
-- https://github.com/Jiangyiqun/android_background_ignore/releases
+2. 电脑安装 [ADB](http://forum.xda-developers.com/showthread.php?p=48915118#post48915118)
 
-2、电脑安装 ADB
+3. 电脑安装 [Universal Android USB driver](http://dl.google.com/android/repository/usb_driver_r11-windows.zip)
 
-- http://forum.xda-developers.com/showthread.php?p=48915118#post48915118
+4. 手机开启 USB 调试 
 
-3、电脑安装 Universal Android USB driver
-
-- http://dl.google.com/android/repository/usb_driver_r11-windows.zip
-
-4、手机开启 USB 调试 
-
-5、运行 android_background_ingore.bat
+5. 运行 android_background_ingore.bat
 
 # 技术说明：
 Android 7.0 新增了一个AppOps项 RUN_IN_BACKGROUND，可用来限制指定APP自动唤醒，如下：
