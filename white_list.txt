@@ -5,7 +5,7 @@
 # 功能 收录在此的APP，在运行android_background_ingore.bat时，会被忽略。
 # 说明 列表中的APP大多为预防性添加，我并未逐个确认一定会工作异常
 
-# 即时聊天
+# 即时聊天（似乎长期不用手机，会杀掉推送服务，未确认）
 com.tencent.mm
 com.tencent.mobileqq
 com.tencent.minihd.qq
@@ -16,7 +16,7 @@ com.tencent.qq.kddi
 # 来电显示
 org.xdty.callerinfo
 
-# 日历
+# 日历（提醒功能不工作）
 cn.ticktick.task
 
 # 邮箱
