@@ -1,4 +1,4 @@
-# 名称: whitelist.txt
+﻿# 名称: whitelist.txt
 # 作者: 白兔Jack
 # 版本: V0.3
 # 地址: https://github.com/Jiangyiqun/android_background_ignore
@@ -17,7 +17,7 @@ com.tencent.androidqqmail
 org.xdty.callerinfo
 me.gitai.smscodehelper
 
+
 # 日历/提醒
 # 提醒功能会失效
 cn.ticktick.task
-
