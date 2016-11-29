@@ -1,4 +1,4 @@
-﻿# 名称: whitelist.txt
+# 名称: whitelist.txt
 # 作者: 白兔Jack
 # 版本: V0.3
 # 地址: https://github.com/Jiangyiqun/android_background_ignore

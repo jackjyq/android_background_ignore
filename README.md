@@ -8,7 +8,7 @@
 
 # 使用步骤：
 
-1. 下载[android_background_ingore.bat](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ingore.bat)与[whitelist.txt](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/white_list.txt)
+1. 下载[android_background_ingore.bat](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ingore.bat)与[whitelist.txt](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/white_list.txt)(编码必须是ANSI,即记事本默认编码)
 
 2. 电脑安装 [ADB](http://forum.xda-developers.com/showthread.php?p=48915118#post48915118)与[Universal Android USB driver](http://dl.google.com/android/repository/usb_driver_r11-windows.zip)
 
