@@ -1,23 +1,33 @@
 # 名称: whitelist.txt
 # 作者: 白兔Jack
-# 版本: V0.3
 # 地址: https://github.com/Jiangyiqun/android_background_ignore
+# 
 # 说明:
-# 1、收录在此的APP，在运行android_background_ingore.bat时，会被忽略
-# 2、APP包名查看工具: http://www.coolapk.com/apk/com.electricsheep.asi
+# 这是一份白名单，收录在此的APP，后台行为不会被限制。
+# 
+# 1、以 "#" 开头的行会被忽略
+# 2、只需要添加需要的第三方 APP 包名
+# 3、该文档应当以 ANSI 编码保存
+# 2、APP包名查看: http://www.coolapk.com/apk/com.electricsheep.asi
+# 
+# 请删掉文档中的示例，添加适合自己的白名单。
 
-# 聊天/邮箱
-# 长期不用微信时，后台服务会被杀掉，表现为收不到推送，但打开微信又可以收到消息。
-# 由于我不依赖QQ，只是偶尔打开QQ看下消息，这种情况就不需要设置QQ。
+
+# 一、推送类
+# 长期不使用的 APP，后台服务会被杀掉，这会导致收不到推送
+# 例如：微信/QQ邮箱消息无法自动弹出，滴答清单提醒失效
+# 如果你依赖于这些 APP 消息推送的及时性，请添加白名单
+# 如果你只是偶尔打开查看消息，而不依赖其自动推送，则不必添加
+
 com.tencent.mm
 com.tencent.androidqqmail
+cn.ticktick.task
 
-# 电话/短信
-# 来电提醒与短信拦截之类的功能会失效
+
+# 二、广播类
+# 这会导致系统广播失效
+# 例如：第三方来电提醒，与短信验证码自动复制会失效
+# 此类APP通常都应当添加到白名单中
+
 org.xdty.callerinfo
 me.gitai.smscodehelper
-
-
-# 日历/提醒
-# 提醒功能会失效
-cn.ticktick.task
