@@ -11,7 +11,7 @@
 1. 下载[android_background_ingore.bat](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ingore.bat)与[whitelist.txt](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/white_list.txt)(编码必须是ANSI,即记事本默认编码)
 2. 电脑安装 [ADB](http://forum.xda-developers.com/showthread.php?p=48915118#post48915118)与[Universal Android USB driver](http://dl.google.com/android/repository/usb_driver_r11-windows.zip)
 3. 手机开启 USB 调试 
-4. 运行 android_background_ingore.bat  ([乱码?闪退?](https://github.com/Jiangyiqun/android_background_ignore/wiki))
+4. 运行 android_background_ingore.bat  ([乱码?闪退?](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%89%B9%E5%A4%84%E7%90%86%E4%B9%B1%E7%A0%81,%E9%97%AA%E9%80%80))
 
 # 技术说明：
 Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤醒，如下：
