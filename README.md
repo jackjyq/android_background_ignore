@@ -30,8 +30,8 @@ This means, until the app next goes in the foreground:
 > - All jobs for the app are cancelled and no more can be scheduled.
 > - All syncs for the app are cancelled and no more can be requested.
 
-参考：[Android 7的新AppOps项：RUN_IN_BACKGROUND到底做了什么](https://zhuanlan.zhihu.com/p/22162719)
-参考：[Google documents: Background Optimizations](https://developer.android.com/topic/performance/background-optimization.html)
+- 参考：[Android 7的新AppOps项：RUN_IN_BACKGROUND到底做了什么](https://zhuanlan.zhihu.com/p/22162719)
+- 参考：[Google documents: Background Optimizations](https://developer.android.com/topic/performance/background-optimization.html)
 
 本项目即给所有**第三方APP**执行如下命令：
 > adb shell cmd appops set <package_name> RUN_IN_BACKGROUND ignore
