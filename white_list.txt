@@ -1,33 +1,49 @@
 # 名称: whitelist.txt
 # 作者: 白兔Jack
 # 地址: https://github.com/Jiangyiqun/android_background_ignore
-# 
+
+
 # 说明:
 # 这是一份白名单，收录在此的APP，后台行为不会被限制。
 # 
-# 1、以 "#" 开头的行会被忽略
-# 2、只需要添加需要的第三方 APP 包名
-# 3、该文档应当以 ANSI 编码保存
-# 2、APP包名查看: http://www.coolapk.com/apk/com.electricsheep.asi
-# 
-# 请删掉文档中的示例，添加适合自己的白名单。
+# 1、以 # 开头的行无效
+# 2、该文件必须以 ANSI 编码保存
+# 3、APP包名查看工具：Android System Info （http://www.coolapk.com/apk/com.electricsheep.asi）
+#
+# 请参考本文说明，编辑适合自己的白名单。
 
 
-# 一、推送类
-# 长期不使用的 APP，后台服务会被杀掉，这会导致收不到推送
-# 例如：微信/QQ邮箱消息无法自动弹出，滴答清单提醒失效
-# 如果你依赖于这些 APP 消息推送的及时性，请添加白名单
-# 如果你只是偶尔打开查看消息，而不依赖其自动推送，则不必添加
+# 系统广播
+# 无法接受系统广播，会导致来电提醒类APP无法随电话启动
+# 此类APP通常都应当添加到白名单中
+#
+org.xdty.callerinfo
+me.gitai.smscodehelper
 
+
+# 消息推送
+# 可能无法及时收到推送，但打开APP时仍会收到消息
+# 如果只是偶尔打开查下消息，则不需要添加到白名单中
+# 这会导致滴答清单提醒功能失效
+#
 com.tencent.mm
-com.tencent.androidqqmail
+# com.tencent.mobileqq
+# com.microsoft.office.outlook
+# com.tencent.androidqqmail
 cn.ticktick.task
 
 
-# 二、广播类
-# 这会导致系统广播失效
-# 例如：第三方来电提醒，与短信验证码自动复制会失效
-# 此类APP通常都应当添加到白名单中
+# 系统监控
+# 此类APP由辅助功能(Accessibility)保证运行，不需要添加白名单
+#
+# com.oasisfeng.greenify
+# com.coolapk.autoinstaller
 
-org.xdty.callerinfo
-me.gitai.smscodehelper
+
+
+
+
+
+
+
+
