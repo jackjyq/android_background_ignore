@@ -40,8 +40,7 @@ This means, until the app next goes in the foreground:
 - 消息推送无法及时送达，如微信及滴答清单的提醒功能
 - 依赖广播的APP无法自动唤醒，如：来电提醒、短信验证码复制
 
-问题1对策:
-- 使用[白名单](https://github.com/Jiangyiqun/android_background_ignore/blob/master/white_list.txt)，排除指定 APP。
+对策: 使用[白名单](https://github.com/Jiangyiqun/android_background_ignore/blob/master/white_list.txt)，排除指定 APP。
 
 ## 问提2：部分APP仍会唤醒
 
@@ -49,13 +48,10 @@ This means, until the app next goes in the foreground:
 2. 无法阻止添加系统账号导致的互相唤醒，阿里系多使用此方法
 3. 无法阻止ShareServie导致的互相唤醒，百度系多使用此方法
 
-问题2对策：
-- 使用[绿色守护](http://www.coolapk.com/apk/com.oasisfeng.greenify)的非ROOT自动休眠（[参见](https://zhuanlan.zhihu.com/p/23372646)）
+对策：使用[绿色守护](http://www.coolapk.com/apk/com.oasisfeng.greenify)的非ROOT自动休眠（[参见](https://zhuanlan.zhihu.com/p/23372646)）
 
 ## 问题3：无法限制内置APP唤醒
 
 本项目不会限制内置APP，在不翻墙的情况下，内置的Google应用耗电较多
 
-问题3对策：
-
-参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%86%85%E7%BD%AE%E5%BA%94%E7%94%A8%E5%81%9C%E7%94%A8%E5%88%97%E8%A1%A8)， 停用部分Google应用
+对策：参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%86%85%E7%BD%AE%E5%BA%94%E7%94%A8%E5%81%9C%E7%94%A8%E5%88%97%E8%A1%A8)， 停用部分Google应用
