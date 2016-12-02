@@ -57,7 +57,8 @@ This means, until the app next goes in the foreground:
 
 ## 问题3：无法限制内置APP唤醒
 
-本项目不会限制内置APP后台，在不翻墙的情况下，Google的应用会持续消耗电量
+本项目不会限制内置APP，在不翻墙的情况下，内置的Google应用耗电较多
 
 问题3对策：
-参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%86%85%E7%BD%AE%E5%BA%94%E7%94%A8%E5%81%9C%E7%94%A8%E5%88%97%E8%A1%A8)， 停用部分内置应用
+
+参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%86%85%E7%BD%AE%E5%BA%94%E7%94%A8%E5%81%9C%E7%94%A8%E5%88%97%E8%A1%A8)， 停用部分Google应用
