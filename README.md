@@ -1,5 +1,5 @@
 # 项目简介：
-提供限制**非ROOT**手机APP的自动唤醒的方法，仅适合 Android N，推荐原生 Android 使用。
+提供限制**非ROOT**手机APP自动唤醒的方法，仅适用于 Android N，推荐原生 Android 使用。
 
 # 使用步骤：
 
