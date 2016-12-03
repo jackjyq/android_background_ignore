@@ -3,25 +3,22 @@
 # 地址: https://github.com/Jiangyiqun/android_background_ignore
 
 
-# 说明:
-# 这是一份白名单，收录在此的APP，后台行为不会被限制。
-# 
-# 1、以 # 开头的行无效
-# 2、该文件必须以 ANSI 编码保存
+# 这是一份白名单（及其编写说明），收录在此的 APP，后台行为不会被限制。
+# 1、以 # 开头的行仅有注释作用，不会被程序执行
+# 2、该文件须以 ANSI 编码保存，即记事本的默认编码
 # 3、APP包名查看工具：Android System Info （http://www.coolapk.com/apk/com.electricsheep.asi）
-#
-# 请参考本文说明，编辑适合自己的白名单。
+# 请参考本文说明，编辑适合自己的白名单。你尤需关注以下几类 APP：
 
 
-# 系统广播
-# 无法接受系统广播，会导致来电提醒类APP无法随电话启动
+# 一、系统广播
+# 后台限制后，无法接受系统广播，会导致来电提醒类APP无法随电话启动
 # 此类APP通常都应当添加到白名单中
 #
 org.xdty.callerinfo
 me.gitai.smscodehelper
 
 
-# 消息推送
+# 二、消息推送
 # 可能无法及时收到推送，但打开APP时仍会收到消息
 # 如果只是偶尔打开查下消息，则不需要添加到白名单中
 # 这会导致滴答清单提醒功能失效
@@ -33,11 +30,10 @@ com.tencent.mm
 cn.ticktick.task
 
 
-# 系统监控
-# 此类APP由辅助功能(Accessibility)保证运行，不需要添加白名单
-#
-# com.oasisfeng.greenify
-# com.coolapk.autoinstaller
+# 三、系统监控
+# 由辅助功能(Accessibility)保证运行的APP，不需要添加白名单
+# 第三方桌面不需要添加白名单
+
 
 
 
