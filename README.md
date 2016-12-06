@@ -1,5 +1,10 @@
 # 项目简介：
-提供限制 APP 自动唤醒的方法，仅适用于 Android N，推荐用于未 Root 的原生Android。
+本页面提供限制 APP 自动唤醒的方法，仅适用于 Android N，推荐用于未 Root 的原生Android。更多省电方法，请参见 [Wifi页面](https://github.com/Jiangyiqun/android_background_ignore/wiki)。
+
+### 讨论：
+
+- https://zhuanlan.zhihu.com/p/23372646
+- http://bbs.gfan.com/android-8411134-1-1.html
 
 # 使用步骤：
 
@@ -7,10 +12,8 @@
 2. 手机开启 USB 调试 ([如何开启?](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E5%BC%80%E5%90%AFUSB%E8%B0%83%E8%AF%95%EF%BC%9F))
 3. 下载 [android_background_ingore](https://github.com/Jiangyiqun/android_background_ignore/releases) 并运行([乱码?闪退?](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%89%B9%E5%A4%84%E7%90%86%E4%B9%B1%E7%A0%81,%E9%97%AA%E9%80%80))。
 
-注释：
+注： 该操作可以[恢复](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%EF%BC%9F)
 
-- 该操作可以[恢复](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%EF%BC%9F)
-- 更多[配合使用的方法](https://github.com/Jiangyiqun/android_background_ignore/wiki)
 
 # 技术说明：
 Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤醒，如下：
@@ -37,7 +40,7 @@ Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤�
 
 # 已知问题：
 
-## 问题1：部分APP工作异常
+### 问题1：部分APP工作异常
 
 限制后台行为会影响部分APP正常工作，主要包括：
 - 消息推送无法及时送达，如微信及滴答清单的提醒功能
@@ -45,7 +48,7 @@ Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤�
 
 对策: 使用[白名单](https://github.com/Jiangyiqun/android_background_ignore/blob/master/white_list.txt)，排除指定 APP。
 
-## 问提2：部分APP仍会唤醒
+### 问提2：部分APP仍会唤醒
 
 1. 无法阻止JobScheduler自动唤醒APP，例如大众点评、Bilibili; 这种唤醒频率较低，[听说](https://www.zhihu.com/question/24360587)较为省电
 2. 无法阻止添加系统账号导致的互相唤醒，阿里系多使用此方法
@@ -53,7 +56,7 @@ Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤�
 
 对策：使用[绿色守护](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E7%BB%BF%E8%89%B2%E5%AE%88%E6%8A%A4)的非ROOT自动休眠
 
-## 问题3：无法限制内置APP唤醒
+### 问题3：无法限制内置APP唤醒
 
 本项目不会限制内置APP，在不翻墙的情况下，内置的Google应用耗电较多
 
