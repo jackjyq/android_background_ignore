@@ -57,7 +57,7 @@ Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤�
 
 对策：参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%86%85%E7%BD%AE%E5%BA%94%E7%94%A8%E5%81%9C%E7%94%A8%E5%88%97%E8%A1%A8)， 停用部分Google应用
 
-# 讨论：
+# 其它问题：
 - http://bbs.gfan.com/android-8418350-1-1.html
 - https://zhuanlan.zhihu.com/p/23372646
 - http://bbs.gfan.com/android-8411134-1-1.html
