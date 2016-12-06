@@ -6,40 +6,32 @@
 # 这是一份白名单（及其编写说明），收录在此的 APP，后台行为不会被限制。
 # 1、以 # 开头的行仅有注释作用，不会被程序执行
 # 2、该文件须以 ANSI 编码保存，即记事本的默认编码
-# 3、APP包名查看工具：Android System Info （http://www.coolapk.com/apk/com.electricsheep.asi）
 # 请参考本文说明，编辑适合自己的白名单。你尤需关注以下几类 APP：
 
 
 # 一、系统广播
-# 后台限制后，无法接受系统广播，会导致来电提醒类APP无法随电话启动
-# 此类APP通常都应当添加到白名单中
+# 说明：无法接受系统广播，导致 APP 无法随特定事件启动
+# 影响：来电提醒，短信验证码自动拾取，剪切板增强，手势增强
+# 建议：此类APP通常应当添加到白名单中
 #
 org.xdty.callerinfo
 me.gitai.smscodehelper
+#
 
 
 # 二、消息推送
-# 可能无法及时收到推送，但打开APP时仍会收到消息
-# 如果只是偶尔打开查下消息，则不需要添加到白名单中
-# 这会导致滴答清单提醒功能失效
+# 说明：长时间不用后台服务会被关掉，无法及时收到推送，但打开APP时仍会收到消息
+# 影响：所有依赖推送的APP，例如微信、邮箱、滴答清单的提醒功能
+# 建议：只添加依赖即使消息的 APP，如果只是偶尔打开查看消息，则无需添加
 #
 com.tencent.mm
 # com.tencent.mobileqq
 # com.microsoft.office.outlook
 # com.tencent.androidqqmail
 cn.ticktick.task
+#
 
 
-# 三、系统监控
-# 由辅助功能(Accessibility)保证运行的APP，不需要添加白名单
-# 第三方桌面不需要添加白名单
-
-
-
-
-
-
-
-
-
-
+# 注意：
+# 1、以下APP无需添加白名单：输入法，启动器，内置APP，由辅助功能启动的APP（如绿色守护）
+# 2、APP包名查看工具：Android System Info （http://www.coolapk.com/apk/com.electricsheep.asi）
