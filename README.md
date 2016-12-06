@@ -1,9 +1,10 @@
 # 项目简介：
 本页面提供限制 APP 自动唤醒的方法，适用于**没有Root**的Android N。
 
-认为有用请点击右上角 Star 收藏。
+- 认为有用请点击右上角 Star 收藏。
 
-更多省电方法，请参见 [Wifi页面](https://github.com/Jiangyiqun/android_background_ignore/wiki)。
+- 更多省电方法，请参见 [Wifi页面](https://github.com/Jiangyiqun/android_background_ignore/wiki)。
+
 # 使用步骤：
 
 1. 电脑安装 ADB 与 Universal Android USB driver ([如何安装？](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85ADB%E4%B8%8E%E9%A9%B1%E5%8A%A8%EF%BC%9F))
