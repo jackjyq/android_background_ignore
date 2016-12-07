@@ -1,4 +1,4 @@
-::名称 android_background_ignore
+﻿::名称 android_background_ignore
 ::作者 白兔Jack
 ::版本 V0.4
 ::项目地址 https://github.com/Jiangyiqun/android_background_ignore
