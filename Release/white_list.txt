@@ -33,7 +33,7 @@ com.tencent.pb
 # 7、触宝电话
 com.cootek.smartdialer
 # 8、和通讯录
-http://www.coolapk.com/apk/com.chinamobile.contacts.im
+com.chinamobile.contacts.im
 
 # 短息唤醒（验证码类下载>2万）及CC短信拦截
 #
