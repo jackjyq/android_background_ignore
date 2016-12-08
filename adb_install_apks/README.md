@@ -1,1 +1,1 @@
-用于批量安装Apk，代码来自[tcpipstack](http://blog.csdn.net/tcpipstack/article/details/8698038)。
+[该脚本](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/adb_install_apks/%E5%BA%94%E7%94%A8%E6%89%B9%E9%87%8F%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC.bat)用于批量安装Apk，代码来自[tcpipstack](http://blog.csdn.net/tcpipstack/article/details/8698038)。
