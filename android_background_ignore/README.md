@@ -1,15 +1,15 @@
-该脚本可限制应用唤醒，适用于没有 Root 的 Android N。
+### 该脚本可限制应用唤醒，适用于没有 Root 的 Android N。
 
-# 使用步骤：
+## 使用步骤：
 
 下载[android_background_ingore.bat](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.bat)与[white_list.txt](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/white_list.txt) ，放入同一目录，然后运行 bat 文件。
 
-注： 
+### 注意： 
 - 批处理乱码、闪退，请点击[这里](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%89%B9%E5%A4%84%E7%90%86%E4%B9%B1%E7%A0%81,%E9%97%AA%E9%80%80)
 - 别担心，该操作可以[恢复](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%EF%BC%9F)
 
 
-# 技术说明：
+## 技术说明：
 Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤醒，如下：
 
 > For this implementation, we now keep track of how long a uid has
@@ -40,7 +40,7 @@ Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤�
 - 消息推送无法及时送达，如微信及滴答清单的提醒功能
 - 依赖广播的APP无法自动唤醒，如：来电提醒、短信验证码复制
 
-对策: 使用[白名单](https://github.com/Jiangyiqun/android_background_ignore/blob/master/white_list.txt)，排除指定 APP。
+对策: 使用[白名单](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/white_list.txt) ，排除指定 APP。
 
 ### 问提2：部分APP仍会唤醒
 
@@ -55,5 +55,3 @@ Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤�
 本项目不会限制内置APP，在不翻墙的情况下，内置的Google应用耗电较多
 
 对策：参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/tree/master/disable_google_apps)， 停用部分Google应用
-
-
