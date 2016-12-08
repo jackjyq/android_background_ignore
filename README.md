@@ -1,7 +1,9 @@
 ### 本项目提供原生 Android N 省电方案，所有方法都无需 Root。
 
-- 请点击右上角 Star 收藏。
-- [Release] (https://github.com/Jiangyiqun/android_background_ignore/releases)已不再维护。
+点击右上角 Star 收藏；访问如下页面参与讨论：
+- http://bbs.gfan.com/android-8418350-1-1.html
+- https://zhuanlan.zhihu.com/p/23372646
+- http://bbs.gfan.com/android-8411134-1-1.html
 
 ## 环境设置
 在开始之前，请参考[此页](https://github.com/Jiangyiqun/android_background_ignore/tree/master/adb_installer)，进行如下设置：
@@ -15,7 +17,7 @@
 2. 使用 [绿色守护](https://github.com/Jiangyiqun/android_background_ignore/tree/master/greenify)，锁屏自动关闭应用
 3. 若不常翻墙，请停用[部分内置应用](https://github.com/Jiangyiqun/android_background_ignore/tree/master/disable_google_apps) 
 
-## 其它
+## 补充说明
 以下相关内容，对省电影响并不大
 - 若不常翻墙，建议[修改网络验证服务器](https://github.com/Jiangyiqun/android_background_ignore/tree/master/captive_portal_server_changer)
 - 推荐使用 [WakeLockDetector](https://github.com/Jiangyiqun/android_background_ignore/wiki/WakeLockDetector)，分析耗电情况
