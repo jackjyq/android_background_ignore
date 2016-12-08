@@ -20,4 +20,4 @@
 ## 补充说明
 以下相关内容，对省电影响并不大
 - 若不常翻墙，建议[修改网络验证服务器](https://github.com/Jiangyiqun/android_background_ignore/tree/master/captive_portal_server_changer)
-- 推荐使用 [WakeLockDetector](https://github.com/Jiangyiqun/android_background_ignore/wiki/WakeLockDetector)，分析耗电情况
+- 推荐使用 [WakeLockDetector](https://github.com/Jiangyiqun/android_background_ignore/tree/master/wake_lock_detector)，分析耗电情况
