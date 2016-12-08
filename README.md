@@ -1,6 +1,8 @@
 ### 本项目提供原生 Android N 省电方案，所有方法都无需 Root。
 
-请点击右上角 Star 收藏；访问如下页面参与讨论：
+2016年12月8日大改，如有链接失效，请告诉我哈^^。感觉有用请点击右上角 Star 收藏。
+
+访问如下页面参与讨论：
 - http://bbs.gfan.com/android-8418350-1-1.html
 - https://zhuanlan.zhihu.com/p/23372646
 - http://bbs.gfan.com/android-8411134-1-1.html
