@@ -1,17 +1,12 @@
-# 项目简介：
-本页面提供限制 APP 自动唤醒的方法，适用于**没有Root**的Android N。
-
-- 认为有用请点击右上角 Star 收藏。
-
-- 更多省电方法，请参见 [Wifi页面](https://github.com/Jiangyiqun/android_background_ignore/wiki)。
+该脚本可限制应用唤醒，适用于没有 Root 的 Android N。
 
 # 使用步骤：
 
-1. 电脑安装 ADB 与 Universal Android USB driver ([如何安装？](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85ADB%E4%B8%8E%E9%A9%B1%E5%8A%A8%EF%BC%9F))
-2. 手机开启 USB 调试 ([如何开启?](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E5%BC%80%E5%90%AFUSB%E8%B0%83%E8%AF%95%EF%BC%9F))
-3. 下载 [android_background_ingore](https://github.com/Jiangyiqun/android_background_ignore/releases) 并运行([乱码?闪退?](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%89%B9%E5%A4%84%E7%90%86%E4%B9%B1%E7%A0%81,%E9%97%AA%E9%80%80))。
+下载[android_background_ingore.bat](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.bat)与[white_list.txt](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/white_list.txt) ，放入同一目录，然后运行 bat 文件。
 
-注： 该操作可以[恢复](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%EF%BC%9F)
+注： 
+- 批处理乱码、闪退，请点击[这里](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%89%B9%E5%A4%84%E7%90%86%E4%B9%B1%E7%A0%81,%E9%97%AA%E9%80%80)
+- 别担心，该操作可以[恢复](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%EF%BC%9F)
 
 
 # 技术说明：
@@ -53,15 +48,12 @@ Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤�
 2. 无法阻止添加系统账号导致的互相唤醒，阿里系多使用此方法
 3. 无法阻止ShareServie导致的互相唤醒，百度系多使用此方法
 
-对策：使用[绿色守护](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E7%BB%BF%E8%89%B2%E5%AE%88%E6%8A%A4)的非ROOT自动休眠
+对策：使用[绿色守护](https://github.com/Jiangyiqun/android_background_ignore/tree/master/greenify)的非ROOT自动休眠
 
 ### 问题3：无法限制内置APP唤醒
 
 本项目不会限制内置APP，在不翻墙的情况下，内置的Google应用耗电较多
 
-对策：参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%86%85%E7%BD%AE%E5%BA%94%E7%94%A8%E5%81%9C%E7%94%A8%E5%88%97%E8%A1%A8)， 停用部分Google应用
+对策：参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/tree/master/disable_google_apps)， 停用部分Google应用
 
-# 参与讨论：
-- http://bbs.gfan.com/android-8418350-1-1.html
-- https://zhuanlan.zhihu.com/p/23372646
-- http://bbs.gfan.com/android-8411134-1-1.html
+
