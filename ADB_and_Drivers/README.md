@@ -1,4 +1,4 @@
-这个文件夹里的 adb-setup-1.4.3.exe 是我做的汉化版。
+这个文件夹里的 adb-setup-1.4.3.exe 是我做的汉化版，可方便的安装ADB及安卓驱动。
 
 原程序来自[XDA论坛](http://forum.xda-developers.com/showthread.php?p=48915118#post48915118)，访问如下链接获取最新版本（英文）：
 
