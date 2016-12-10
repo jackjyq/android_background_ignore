@@ -1,4 +1,4 @@
-::名称 android_background_ignore
+﻿::名称 android_background_ignore
 ::作者 白兔Jack
 ::版本 V0.5
 ::项目地址 https://github.com/Jiangyiqun/android_background_ignore
@@ -27,6 +27,8 @@ if errorlevel 1 (
 )
 echo.
 
+
+
 ::初次使用生成白名单
 if exist white_list.txt (
 	goto plan_menu
@@ -52,13 +54,18 @@ echo # >> white_list.txt
 echo # 请参考以上说明，删除多余的行，仅保留需要添加至白名单的应用 >> white_list.txt
 echo # >> white_list.txt
 echo # 白名单: >> white_list.txt
+echo. >> white_list.txt
 adb shell pm list packages -3 > apps_list.txt
 for /f "tokens=2 delims=:" %%i in (apps_list.txt) do (
 	echo %%i >> white_list.txt
 	)
+echo. >> white_list.txt
+echo # 请保存文件，关闭文本编辑器以继续... >> white_list.txt
 del apps_list.txt
 echo 请阅读并编辑 white_list.txt 文件
 call white_list.txt
+
+
 
 ::用户菜单
 :plan_menu
@@ -69,6 +76,8 @@ echo 2、恢复默认模式
 set /p choice=请选择：
 if "%choice%"=="1" goto plan_1
 if "%choice%"=="2" goto plan_2
+
+
 
 ::限制自动唤醒
 :plan_1
@@ -89,6 +98,8 @@ adb shell cmd appops set %%i RUN_IN_BACKGROUND allow
 )
 goto plan_end
 
+
+
 ::恢复默认模式
 :plan_2
 echo.
@@ -101,12 +112,12 @@ for /f "tokens=2 delims=:" %%i in (apps_list.txt) do (
 del apps_list.txt
 goto plan_end
 
+
+::结束，提醒关闭USB调试
 :plan_end
 echo.
 echo 已经完成，请关闭USB调试后，按任意键退出
 pause
-
-::提醒关闭USB调试
 :plan_USB
 adb devices | findstr "device$"
 echo.
