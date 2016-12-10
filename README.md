@@ -1,4 +1,4 @@
-### 无需Root，原生Android N省电指南
+# 无需Root，原生Android N省电指南
 
 如有链接失效，请告知。有用请点击右上角 Star 收藏。
 
