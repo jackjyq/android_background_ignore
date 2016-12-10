@@ -12,7 +12,7 @@
 * Device Policy
 * Drive 云端硬盘
 * Gmail
-* Google App ([无法停用？](若无法停用，请点击右上角-卸载更新，恢复出厂版本，再行停用。如果无效，请升级 Google App，然后再卸载更新，不要做任何操作，点击停用按钮)
+* Google App (若无法停用，请点击右上角-卸载更新，恢复出厂版本，再行停用。如果无效，请升级 Google App，然后再卸载更新，不要做任何操作，点击停用按钮)
 * Google Play Games 游戏
 * Google Play Music音乐
 * Google Play Store商店
