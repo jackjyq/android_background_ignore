@@ -1,7 +1,7 @@
 [该脚本](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.bat)可限制应用唤醒，适用于没有 Root 的 Android N。
 
 ## 注意事项： 
-- 需要安装ADB、驱动并开启USB调试，方法见[此页](https://github.com/Jiangyiqun/android_background_ignore/tree/master/adb_installer)
+- 安装ADB、驱动及开启USB调试方法见[此页](https://github.com/Jiangyiqun/android_background_ignore/tree/master/adb_installer)
 - 批处理乱码、闪退，请点击[这里](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%89%B9%E5%A4%84%E7%90%86%E4%B9%B1%E7%A0%81,%E9%97%AA%E9%80%80)
 - 别担心，该操作可以[恢复](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%EF%BC%9F)
 
