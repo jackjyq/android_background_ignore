@@ -4,7 +4,7 @@
 若无法显示，请点击设置 - 应用 - 显示系统进程。
 * Google Account Manager 账号管理程序
 * Google Backup Transport 备份传输
-* Google Play Services 服务(若无法停禁用，请点击设置-安全-设备管理器，然后取消Google Play服务)
+* Google Play Services 服务(若无法停用，请点击设置-安全-设备管理器，然后取消Google Play服务)
 * Google Play Services Framwork 服务框架
 
 ## 停用依赖 Google Play Services 的应用
@@ -12,7 +12,7 @@
 * Device Policy
 * Drive 云端硬盘
 * Gmail
-* Google App ([无法停用？](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E5%81%9C%E7%94%A8-Google-APP-%3F))
+* Google App ([无法停用？](若无法停用，请点击右上角-卸载更新，恢复出厂版本，再行停用。如果无效，请升级 Google App，然后再卸载更新，不要做任何操作，点击停用按钮)
 * Google Play Games 游戏
 * Google Play Music音乐
 * Google Play Store商店
