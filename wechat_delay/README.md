@@ -1,4 +1,4 @@
-微信推送延时排查指南：
+## 微信推送延时排查指南
 
 ## 后台限制脚本
 无论是否使用GCM，把微信加入 android_background_ignore.bat 白名单
