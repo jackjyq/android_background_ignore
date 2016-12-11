@@ -48,9 +48,8 @@
 ![](https://github.com/Jiangyiqun/android_background_ignore/raw/master/wechat_delay/time.png)
 
 ### 网络不稳定
-可能由于网络不稳定导致，而非系统设置问题，以下为排查建议：
+可能由于网络不稳定导致，而非系统设置问题，有如下建议：
 
 1. 若使用shadowsocks，请使用分应用代理功能，把微信加入排除名单，避免服务器不稳定
-2. 使用数据网络时，关闭Wifi，以避免自动连上无效的公共WIfi（如酒店、麦当劳、机场提供的 Wifi。推荐[修改网络验证服务器](https://github.com/Jiangyiqun/android_background_ignore/tree/master/captive_portal_server_changer)更好的知晓WIfi有效性。
-
-
+2. 使用数据网络时，关闭Wifi，以避免自动连上无效的公共WIfi（如酒店、麦当劳、机场提供的 Wifi）。
+3. 推荐[修改网络验证服务器](https://github.com/Jiangyiqun/android_background_ignore/tree/master/captive_portal_server_changer)自动检查 WIfi 有效性。
