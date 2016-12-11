@@ -19,6 +19,7 @@
 以下相关内容，对省电影响并不大
 - 若不常翻墙，建议[修改网络验证服务器](https://github.com/Jiangyiqun/android_background_ignore/tree/master/captive_portal_server_changer)
 - 推荐使用 [WakeLockDetector](https://github.com/Jiangyiqun/android_background_ignore/tree/master/wake_lock_detector)，分析耗电情况
+- 请参考[微信推送延时排查指南](https://github.com/Jiangyiqun/android_background_ignore/tree/master/wechat_delay)
 
 ## 参与讨论
 - http://bbs.gfan.com/android-8418350-1-1.html
