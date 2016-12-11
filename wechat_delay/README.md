@@ -1,6 +1,6 @@
-使用本项目后，若发现微信（有时）推送延时，请参考下文排查解决：
+## 使用本项目后，若发现微信（有时）推送延时，请参考下文排查解决：
 
-# 重点排查
+# 重点排查:
 
 ### 后台限制脚本
 无论是否使用GCM，把微信加入 android_background_ignore.bat 白名单
@@ -22,11 +22,13 @@
 ![](https://github.com/Jiangyiqun/android_background_ignore/raw/master/wechat_delay/wifi.png)
 
 ### 电池优化
-设置 - 电池 - 电池优化（右上角三个点图标） -  所有应用 - 微信 - 优化
+设置 - 电池 - 电池优化（右上角三个点图标） -  所有应用 - 微信 - 未优化
 
 ![](https://github.com/Jiangyiqun/android_background_ignore/raw/master/wechat_delay/battery.png)
 
-# 其它尝试
+# 其它尝试:
+
+若以上方法无效，请再尝试下面方法，部分方法原理不明
 
 ### 内置应用
 参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/tree/master/disable_google_apps)，不要停用多余的内置应用，尤其是系统应用
