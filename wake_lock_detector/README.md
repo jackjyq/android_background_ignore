@@ -3,7 +3,7 @@ WakeLockDetector 可用来检测休眠耗电情况。无须Root，但必须进�
 ## 使用方法
 1. 设置 —— 勾选 **高级模式**
 2. 主页 —— 选择 **CPU唤醒锁**
-3. 唤醒时间通常应该保持在10%以内
+3. 一般而言，唤醒时间在10%以内为正常
 
 ![](https://github.com/Jiangyiqun/android_background_ignore/raw/master/wake_lock_detector/awake_time.jpg)
 
