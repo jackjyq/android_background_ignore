@@ -22,6 +22,6 @@
 - 如果需要，请参考 [微信推送延时排查指南](https://github.com/Jiangyiqun/android_background_ignore/tree/master/wechat_delay)
 
 ## 参与讨论
-- http://bbs.gfan.com/android-8418350-1-1.html
-- https://zhuanlan.zhihu.com/p/23372646
-- http://bbs.gfan.com/android-8411134-1-1.html
+- [知乎专栏](https://zhuanlan.zhihu.com/p/23372646)
+- [机锋论坛](http://bbs.gfan.com/android-8418350-1-1.html)
+
