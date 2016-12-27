@@ -1,8 +1,8 @@
 # 无需Root，原生Android N省电指南
 
-如有链接失效，请告知。有用请点击右上角 Star 收藏。
+批处理下载方法请参考[此页](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%89%B9%E5%A4%84%E7%90%86%E4%B9%B1%E7%A0%81,%E9%97%AA%E9%80%80)
 
-
+有用请点击右上角 Star 收藏
 
 ## 环境设置
 在开始之前，请参考[此页](https://github.com/Jiangyiqun/android_background_ignore/tree/master/adb_installer)，进行如下设置：
