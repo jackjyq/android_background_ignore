@@ -1,3 +1,7 @@
+## Andorid 8 后台限制
+Android 8系统内置后台限制
+![background_activity](https://github.com/Jiangyiqun/android_background_ignore/blob/master/android_background_ignore/background_activity.jpg)
+
 [该脚本](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.bat)可限制应用唤醒，适用于没有 Root 的 Android 7/8。
 
 ## 注意事项： 
