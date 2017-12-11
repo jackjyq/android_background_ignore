@@ -1,12 +1,9 @@
-## Andorid 8 后台限制
-Android 8系统内置后台限制
-![background_activity](https://github.com/Jiangyiqun/android_background_ignore/blob/master/android_background_ignore/background_activity.jpg)
-
-[该脚本](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.bat)可限制应用唤醒，适用于没有 Root 的 Android 7/8。
+该脚本 [Windows版](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.bat) / [Linux版](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.sh) 可限制应用唤醒，适用于没有 Root 的 Android 7/8。
 
 ## 注意事项： 
 - 安装ADB、驱动及开启USB调试方法见[此页](https://github.com/Jiangyiqun/android_background_ignore/tree/master/adb_installer)
-- 批处理乱码、闪退，请点击[这里](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%89%B9%E5%A4%84%E7%90%86%E4%B9%B1%E7%A0%81,%E9%97%AA%E9%80%80)
+- Windows 批处理乱码、闪退，请点击[这里](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%89%B9%E5%A4%84%E7%90%86%E4%B9%B1%E7%A0%81,%E9%97%AA%E9%80%80)
+- Linux 显示 ????????????    no permissions, 请点击[这里](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%98%BE%E7%A4%BA%E6%97%A0%E6%9D%83%E9%99%90)
 - 别担心，该操作可以[恢复](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%EF%BC%9F)
 
 
@@ -56,3 +53,11 @@ Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤�
 本项目不会限制内置APP，在不翻墙的情况下，内置的Google应用耗电较多
 
 对策：参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/tree/master/disable_google_apps)， 停用部分Google应用
+
+## Andorid 8.0 内置后台限制
+Andorid 8.0 内置后台限制，位于 APP 属性页。部分 APP 已针对 Android 8.0 后台优化，因此没有该选项。 \
+![background_activity](./background_activity.png)
+
+## Andorid 8.1 内置后台限制
+Andorid 8.1 内置后台限制，位于开发者选项页，可用来批量管理应用后台行为。 \
+![background_check](./background_check.png)
