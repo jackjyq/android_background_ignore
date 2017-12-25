@@ -18,7 +18,7 @@ do
         adb devices
         echo "请确保手机开启 USB 调试"
         echo
-        read -rsp $'按任意键继续'
+        read -rsp $'按回车键继续'
     fi
 done
 
@@ -53,7 +53,8 @@ else
     echo >> white_list.txt
     echo "# 请保存文件，关闭文本编辑器以继续..." >> white_list.txt
     echo "请阅读并编辑 white_list.txt 文件"
-    gedit white_list.txt
+    gedit white_list.txt ||
+    xed white_list.txt
 fi
 
 
@@ -116,7 +117,7 @@ done
 # 结束，提醒关闭USB调试
 echo
 echo "已经完成，请关闭USB调试后，按 Enter 退出"
-read -rsp $'按 Enter 键继续'
+read -rsp $'按回车键继续'
 while :
 do
     echo
