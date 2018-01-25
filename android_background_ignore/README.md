@@ -54,10 +54,10 @@ Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤�
 
 对策：参考[内置应用停用列表](https://github.com/Jiangyiqun/android_background_ignore/tree/master/disable_google_apps)， 停用部分Google应用
 
-## Andorid 8.0 内置后台限制
-Andorid 8.0 内置后台限制，位于 APP 属性页。部分 APP 已针对 Android 8.0 后台优化，因此没有该选项。 \
-![background_activity](./background_activity.png)
+## Andorid 8.x 内置后台限制
+- Andorid 8.0 内置后台限制，位于 APP 属性页。部分 APP 已针对 Android 8.0 后台优化，因此没有该选项
+- Andorid 8.1 内置后台限制，位于开发者选项页，可用来批量管理应用后台行为
 
-## Andorid 8.1 内置后台限制
-Andorid 8.1 内置后台限制，位于开发者选项页，可用来批量管理应用后台行为。 \
+![background_activity](./background_activity.png)
 ![background_check](./background_check.png)
+
