@@ -1,4 +1,4 @@
-# 无需Root，原生Android 7/8省电指南
+# 无需Root，原生Android 7.x~8.0省电指南
 
 批处理下载方法请参考[此页](https://github.com/Jiangyiqun/android_background_ignore/wiki/%E6%89%B9%E5%A4%84%E7%90%86%E4%B9%B1%E7%A0%81,%E9%97%AA%E9%80%80)
 
