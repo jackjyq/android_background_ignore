@@ -1,4 +1,7 @@
-该脚本 [Windows版](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.bat) / [Linux版](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.sh) 可限制应用唤醒，适用于没有 Root 的 Android 7/8。
+该脚本 [Windows版](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.bat) / [Linux版](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.sh) 可限制应用唤醒，适用于没有 Root 的 Android 7.x~8.0。
+
+Android 8.1+无需使用该脚本，请参见本页最后**Andorid 8.x 内置后台限制**
+
 
 ## 注意事项： 
 - 安装ADB、驱动及开启USB调试方法见[此页](https://github.com/Jiangyiqun/android_background_ignore/tree/master/adb_installer)
