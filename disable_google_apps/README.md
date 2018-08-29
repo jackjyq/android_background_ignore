@@ -1,6 +1,6 @@
 若你不使用Google的应用(不常翻墙)，可停用部分内置应用，这会**明显延长待机时间**。
 
-注：本页内容适用于原生Android 7.0，Android 8.0 未测试。
+注：该列表已不适用于最新的 Android，方法仅供参考
 
 ##  停用 Google Play Services
 若无法显示，请点击设置 - 应用 - 显示系统进程。
@@ -23,6 +23,12 @@
 * Photos 照片
 * Project Fi
 * Youtube
+
+注: 目前版本的 Android Message 也依赖 Google Play Services， 需要寻找替代品
+
+## 安装替代应用
+
+- [Gapps Alternatives](https://www.coolapk.com/album/2235733)
 
 ## 说明
 - 停用内置应用并非为了整洁美观，而是出于省电的实际要求。推荐使用[WakeLock Detector Lite](https://github.com/Jiangyiqun/android_background_ignore/tree/master/wake_lock_detector)查看，只尝试停用影响休眠的应用，而不是**“ 能停用的都停用 ”**。后者无助于省电，并可能导致不可预知的问题。

@@ -1,4 +1,4 @@
-该脚本 [Windows版](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.bat) / [Linux版](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.sh) 可限制应用唤醒，适用于没有 Root 的 Android 7.x~8.0。
+该脚本 [Windows版](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.bat) / [Linux版](https://raw.githubusercontent.com/Jiangyiqun/android_background_ignore/master/android_background_ignore/android_background_ingore.sh) 可限制应用唤醒，适用于没有 Root 的 Android 7.x~8.0
 
 Android 8.1+无需使用该脚本，请参见本页最后**Andorid 8.x 内置后台限制**
 
@@ -11,7 +11,7 @@ Android 8.1+无需使用该脚本，请参见本页最后**Andorid 8.x 内置后
 
 
 ## 技术说明：
-Android N 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤醒，如下：
+Android 7.0+ 新增一个AppOps项 RUN_IN_BACKGROUND，可限制指定APP自动唤醒，如下：
 
 > For this implementation, we now keep track of how long a uid has
 > been in the background, and after a certain amount of time
